@@ -1,0 +1,61 @@
+version: '2'
+services:
+    mysql:
+        image: mariadb:10
+        environment:
+            MYSQL_ROOT_PASSWORD: abigsecret
+    beanstalkd:
+        image: schickling/beanstalkd
+    redis:
+        image: redis
+    create:
+        extends:
+            service: cli
+            file: docker-compose.base.yml
+        command: /srv/bin/console create-tasks -vvv
+        links:
+            - mysql
+            - beanstalkd
+            - redis
+    worker_sqs:
+        extends:
+            service: cli
+            file: docker-compose.base.yml
+        command: /srv/bin/console mcfedr:queue:sqs-runner -vvv
+    worker_delay:
+        extends:
+            service: cli
+            file: docker-compose.base.yml
+        command: /srv/bin/console mcfedr:queue:delay-runner -vvv
+        links:
+            - mysql
+    worker_beanstalk:
+        extends:
+            service: cli
+            file: docker-compose.base.yml
+        command: /srv/bin/console mcfedr:queue:beanstalk-runner -vvv
+        links:
+            - beanstalkd
+    worker_resque:
+        extends:
+            service: cli
+            file: docker-compose.base.yml
+        command: /srv/vendor/bin/resque
+        environment:
+            - REDIS_BACKEND=redis
+            - VVERBOSE=1
+            - APP_INCLUDE=/srv/app/autoload.php
+            - QUEUE=default
+        links:
+            - redis
+    worker_resque_scheduler:
+        extends:
+            service: cli
+            file: docker-compose.base.yml
+        command: /srv/vendor/bin/resque-scheduler
+        environment:
+            - REDIS_BACKEND=redis
+            - VVERBOSE=1
+        links:
+            - redis
+
