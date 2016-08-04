@@ -4,6 +4,8 @@
  */
 namespace AppBundle\Task;
 
+use AppBundle\Entity\Something;
+use Doctrine\Bundle\DoctrineBundle\Registry;
 use Mcfedr\QueueManagerBundle\Exception\UnrecoverableJobException;
 use Mcfedr\QueueManagerBundle\Queue\Worker;
 use Psr\Log\LoggerInterface;
@@ -16,11 +18,14 @@ class TaskWorker implements Worker
     private $logger;
 
     /**
-     * @param LoggerInterface $logger
+     * @var Registry
      */
-    public function __construct(LoggerInterface $logger)
+    private $doctrine;
+
+    public function __construct(LoggerInterface $logger, Registry $doctrine)
     {
         $this->logger = $logger;
+        $this->doctrine = $doctrine;
     }
 
     /**
@@ -35,5 +40,9 @@ class TaskWorker implements Worker
         $this->logger->info('Executed task', [
             'arguments' => $arguments
         ]);
+
+        $s = new Something(null);
+        $this->doctrine->getManager()->persist($s);
+        $this->doctrine->getManager()->flush();
     }
 }
