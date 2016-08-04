@@ -27,10 +27,10 @@
         "sensio/distribution-bundle": "^5.0",
         "sensio/framework-extra-bundle": "^3.0.2",
         "incenteev/composer-parameter-handler": "^2.0",
-        "mcfedr/sqs-queue-driver-bundle": "^2.0",
-        "mcfedr/doctrine-delay-queue-driver-bundle": "^2.0",
-        "mcfedr/beanstalk-queue-driver-bundle": "^2.0",
-        "mcfedr/resque-queue-driver-bundle": "^2.0"
+        "mcfedr/sqs-queue-driver-bundle": "^3.0",
+        "mcfedr/doctrine-delay-queue-driver-bundle": "^3.0",
+        "mcfedr/beanstalk-queue-driver-bundle": "^3.0",
+        "mcfedr/resque-queue-driver-bundle": "^3.0"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",

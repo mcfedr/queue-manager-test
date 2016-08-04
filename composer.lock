@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "670875ee7c0e07bec8e7b38f0eb6db39",
-    "content-hash": "b31f095ab26d01d2b7968ccf81c7dcf4",
+    "hash": "9a3a8450b1e9b8b4a1f473154ba4344b",
+    "content-hash": "c02af13a3a70781fc78b8e9829b3c0c0",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -1167,20 +1167,20 @@
         },
         {
             "name": "mcfedr/beanstalk-queue-driver-bundle",
-            "version": "2.0.4",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcfedr/beanstalk-queue-driver-bundle.git",
-                "reference": "ac2c3d99469d7c6dd91120aa0f3f4ebebe5f4dc6"
+                "reference": "fcf92dacbef69815e64351182f46b0a7073c81d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcfedr/beanstalk-queue-driver-bundle/zipball/ac2c3d99469d7c6dd91120aa0f3f4ebebe5f4dc6",
-                "reference": "ac2c3d99469d7c6dd91120aa0f3f4ebebe5f4dc6",
+                "url": "https://api.github.com/repos/mcfedr/beanstalk-queue-driver-bundle/zipball/fcf92dacbef69815e64351182f46b0a7073c81d7",
+                "reference": "fcf92dacbef69815e64351182f46b0a7073c81d7",
                 "shasum": ""
             },
             "require": {
-                "mcfedr/queue-manager-bundle": "^4.0",
+                "mcfedr/queue-manager-bundle": "^5.0",
                 "pda/pheanstalk": "^3.1.0",
                 "php": ">=5.5",
                 "symfony/symfony": "^2.8|^3.0"
@@ -1213,26 +1213,26 @@
                 "schedule",
                 "task"
             ],
-            "time": "2016-08-01 12:19:33"
+            "time": "2016-08-04 14:30:31"
         },
         {
             "name": "mcfedr/doctrine-delay-queue-driver-bundle",
-            "version": "2.0.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcfedr/doctrine-delay-queue-driver-bundle.git",
-                "reference": "61d81cccdfdd6e271c2d7abeda48e55d0a8e2257"
+                "reference": "8ac32d6e7182e9765e24c515b232d328f5acbfaf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcfedr/doctrine-delay-queue-driver-bundle/zipball/61d81cccdfdd6e271c2d7abeda48e55d0a8e2257",
-                "reference": "61d81cccdfdd6e271c2d7abeda48e55d0a8e2257",
+                "url": "https://api.github.com/repos/mcfedr/doctrine-delay-queue-driver-bundle/zipball/8ac32d6e7182e9765e24c515b232d328f5acbfaf",
+                "reference": "8ac32d6e7182e9765e24c515b232d328f5acbfaf",
                 "shasum": ""
             },
             "require": {
                 "doctrine/doctrine-bundle": "^1.6",
                 "doctrine/orm": "^2.5",
-                "mcfedr/queue-manager-bundle": "^4.0",
+                "mcfedr/queue-manager-bundle": "^5.0",
                 "php": ">=5.5",
                 "symfony/symfony": "^2.8|^3.0"
             },
@@ -1264,7 +1264,7 @@
                 "schedule",
                 "task"
             ],
-            "time": "2016-07-29 11:16:34"
+            "time": "2016-08-04 13:41:19"
         },
         {
             "name": "mcfedr/php-resque",
@@ -1360,16 +1360,16 @@
         },
         {
             "name": "mcfedr/queue-manager-bundle",
-            "version": "4.1.0",
+            "version": "5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcfedr/queue-manager-bundle.git",
-                "reference": "00818b075cfbf4f5afcd00570245666bb937efb5"
+                "reference": "9331413748f034b6f7e872784e57af1b1c0b947f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcfedr/queue-manager-bundle/zipball/00818b075cfbf4f5afcd00570245666bb937efb5",
-                "reference": "00818b075cfbf4f5afcd00570245666bb937efb5",
+                "url": "https://api.github.com/repos/mcfedr/queue-manager-bundle/zipball/9331413748f034b6f7e872784e57af1b1c0b947f",
+                "reference": "9331413748f034b6f7e872784e57af1b1c0b947f",
                 "shasum": ""
             },
             "require": {
@@ -1410,26 +1410,26 @@
                 "schedule",
                 "task"
             ],
-            "time": "2016-08-04 11:40:14"
+            "time": "2016-08-04 13:19:39"
         },
         {
             "name": "mcfedr/resque-queue-driver-bundle",
-            "version": "2.0.1",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcfedr/resque-queue-driver-bundle.git",
-                "reference": "0d07d21cb6f8132186b9a02ca200797a5c407a52"
+                "reference": "7ee98e9dcecccb04f84dffcc21ad2e3aa9ae546f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcfedr/resque-queue-driver-bundle/zipball/0d07d21cb6f8132186b9a02ca200797a5c407a52",
-                "reference": "0d07d21cb6f8132186b9a02ca200797a5c407a52",
+                "url": "https://api.github.com/repos/mcfedr/resque-queue-driver-bundle/zipball/7ee98e9dcecccb04f84dffcc21ad2e3aa9ae546f",
+                "reference": "7ee98e9dcecccb04f84dffcc21ad2e3aa9ae546f",
                 "shasum": ""
             },
             "require": {
                 "mcfedr/php-resque": "~1.3",
                 "mcfedr/php-resque-scheduler": "~1.4",
-                "mcfedr/queue-manager-bundle": "^4.0",
+                "mcfedr/queue-manager-bundle": "^5.0",
                 "php": ">=5.5",
                 "symfony/symfony": "^2.8|^3.0"
             },
@@ -1465,25 +1465,25 @@
                 "schedule",
                 "task"
             ],
-            "time": "2016-07-29 14:30:22"
+            "time": "2016-08-04 14:31:26"
         },
         {
             "name": "mcfedr/sqs-queue-driver-bundle",
-            "version": "2.0.2",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcfedr/sqs-queue-driver-bundle.git",
-                "reference": "d2cf0ac97e2511361a210a003ea75a0d7a28c12d"
+                "reference": "ac17bce7d40fa5bc810077e02e6da33a94bc73be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcfedr/sqs-queue-driver-bundle/zipball/d2cf0ac97e2511361a210a003ea75a0d7a28c12d",
-                "reference": "d2cf0ac97e2511361a210a003ea75a0d7a28c12d",
+                "url": "https://api.github.com/repos/mcfedr/sqs-queue-driver-bundle/zipball/ac17bce7d40fa5bc810077e02e6da33a94bc73be",
+                "reference": "ac17bce7d40fa5bc810077e02e6da33a94bc73be",
                 "shasum": ""
             },
             "require": {
                 "aws/aws-sdk-php": "^3.15",
-                "mcfedr/queue-manager-bundle": "^4.0",
+                "mcfedr/queue-manager-bundle": "^5.0",
                 "php": ">=5.5",
                 "symfony/symfony": "^2.8|^3.0"
             },
@@ -1519,7 +1519,7 @@
                 "sqs",
                 "task"
             ],
-            "time": "2016-07-29 15:12:27"
+            "time": "2016-08-04 14:34:28"
         },
         {
             "name": "monolog/monolog",
@@ -2044,59 +2044,6 @@
             "time": "2015-11-07 08:07:40"
         },
         {
-            "name": "swiftmailer/swiftmailer",
-            "version": "v5.4.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "4cc92842069c2bbc1f28daaaf1d2576ec4dfe153"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/4cc92842069c2bbc1f28daaaf1d2576ec4dfe153",
-                "reference": "4cc92842069c2bbc1f28daaaf1d2576ec4dfe153",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "mockery/mockery": "~0.9.1"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.4-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "lib/swift_required.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Chris Corbyn"
-                },
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "Swiftmailer, free feature-rich PHP mailer",
-            "homepage": "http://swiftmailer.org",
-            "keywords": [
-                "email",
-                "mail",
-                "mailer"
-            ],
-            "time": "2016-07-08 11:51:25"
-        },
-        {
             "name": "symfony/monolog-bundle",
             "version": "2.11.1",
             "source": {
@@ -2492,63 +2439,6 @@
                 "shim"
             ],
             "time": "2016-05-18 14:26:46"
-        },
-        {
-            "name": "symfony/swiftmailer-bundle",
-            "version": "v2.3.11",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/swiftmailer-bundle.git",
-                "reference": "5e1a90f28213231ceee19c953bbebc5b5b95c690"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/swiftmailer-bundle/zipball/5e1a90f28213231ceee19c953bbebc5b5b95c690",
-                "reference": "5e1a90f28213231ceee19c953bbebc5b5b95c690",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2",
-                "swiftmailer/swiftmailer": ">=4.2.0,~5.0",
-                "symfony/config": "~2.3|~3.0",
-                "symfony/dependency-injection": "~2.3|~3.0",
-                "symfony/http-kernel": "~2.3|~3.0",
-                "symfony/yaml": "~2.3|~3.0"
-            },
-            "require-dev": {
-                "symfony/phpunit-bridge": "~2.7|~3.0"
-            },
-            "suggest": {
-                "psr/log": "Allows logging"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Bundle\\SwiftmailerBundle\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "Symfony SwiftmailerBundle",
-            "homepage": "http://symfony.com",
-            "time": "2016-01-15 16:41:20"
         },
         {
             "name": "symfony/symfony",
