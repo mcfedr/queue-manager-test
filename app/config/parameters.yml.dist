@@ -12,6 +12,7 @@ parameters:
 
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
-    push_aws_key: x
-    push_aws_secret: x
-    push_aws_region: eu-west-1
+    aws_key: x
+    aws_secret: x
+    aws_region: eu-west-1
+    sqs_url: https://sqs.eu-west-1.amazonaws.com/...

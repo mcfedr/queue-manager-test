@@ -64,14 +64,11 @@ mcfedr_queue_manager:
         sqs:
             driver: sqs
             options:
-                default_url: "https://sqs.eu-west-1.amazonaws.com/576647029966/kidslox-tasks-fred"
-                queues:
-                    actions: "https://sqs.eu-west-1.amazonaws.com/576647029966/kidslox-tests-fred-actions"
-                    notifications: "https://sqs.eu-west-1.amazonaws.com/576647029966/kidslox-tests-fred-notifications"
-                region: "%push_aws_region%"
+                default_url: "%sqs_url%"
+                region: "%aws_region%"
                 credentials:
-                    key: "%push_aws_key%"
-                    secret: "%push_aws_secret%"
+                    key: "%aws_key%"
+                    secret: "%aws_secret%"
         resque:
             driver: resque
             options:
